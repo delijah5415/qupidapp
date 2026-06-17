@@ -1,6 +1,8 @@
 ├── package.json
 ├── tailwind.config.js
 ├── next.config.ts
+├── public/
+│   └── qupid-logo.png          <-- Place your high-res transparent PNG logo file here
 ├── app/
 │   ├── layout.tsx
 │   ├── page.tsx
@@ -9,9 +11,9 @@
 │   ├── portal/
 │   │   └── page.tsx
 │   └── api/
-│       ├── billing/
-│       │   ├── route.ts
-│       │   └── webhook/
-│       │       └── route.ts
-│       └── checkout/
-│           └── route.ts
+│       ├── checkout/
+│       │   └── route.ts
+│       └── billing/
+│           ├── route.ts
+│           └── webhook/
+│               └── route.ts
