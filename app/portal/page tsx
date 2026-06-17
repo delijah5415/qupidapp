@@ -1,0 +1,77 @@
+import { User, ShieldCheck, CreditCard, RefreshCw, BellRing } from "lucide-react";
+
+export default function ClientPortal() {
+  return (
+    <main className="min-h-screen py-16 max-w-7xl mx-auto px-6">
+      <div className="border-b border-[#262624] pb-6 mb-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <span className="font-mono text-xs text-zinc-500 uppercase">// ACTIVE ENVIRONMENT SYSTEM CONTEXT</span>
+          <h1 className="text-2xl font-bold uppercase tracking-tight">Qupid Customer Hub</h1>
+        </div>
+        <div className="bg-[#1A1A19] border border-[#262624] px-4 py-2 font-mono text-[11px] text-zinc-400 flex items-center gap-2">
+          <span>System Account Token ID: <strong className="text-white">qpd_1092_auth</strong></span>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Profile Settings info block */}
+        <div className="border border-[#262624] p-6 space-y-6">
+          <div className="flex items-center gap-3">
+            <User className="w-5 h-5 text-[#E53E3E]" />
+            <h3 className="font-mono text-xs uppercase font-bold tracking-wider">Operational Identity</h3>
+          </div>
+          <div className="space-y-3 font-mono text-xs text-zinc-400">
+            <div><span className="text-zinc-600 block">PLATFORM TENANT</span> <span className="text-white font-bold">Qupid Retail Systems Ltd</span></div>
+            <div><span className="text-zinc-600 block">ROUTING DOMAIN ALIAS</span> <span className="text-white underline">retail.qupid.com</span></div>
+          </div>
+        </div>
+
+        {/* Real-time Schedule Tracker Window */}
+        <div className="border border-[#262624] p-6 space-y-6">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <RefreshCw className="w-5 h-5 text-zinc-400 animate-spin" />
+              <h3 className="font-mono text-xs uppercase font-bold tracking-wider">Active Stream Metrics</h3>
+            </div>
+            <span className="bg-red-950 text-[#E53E3E] font-mono text-[9px] px-2 py-0.5 uppercase tracking-widest font-bold">LIVE SOCKETS</span>
+          </div>
+          <div className="space-y-3 font-mono text-xs">
+            <div className="p-3 bg-zinc-950 border border-[#262624] flex justify-between items-center">
+              <span>Order #40921 Pipeline</span>
+              <span className="text-zinc-400 font-bold">Awaiting Input</span>
+            </div>
+            <div className="p-3 bg-zinc-950 border border-l-2 border-l-[#E53E3E] border-[#262624] flex justify-between items-center">
+              <span>Customer Selection Node #1</span>
+              <span className="text-[#E53E3E] font-bold">Active Hook</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Subscription Mandate Vault info block */}
+        <div className="border border-[#262624] p-6 space-y-6 bg-zinc-950">
+          <div className="flex items-center gap-3">
+            <CreditCard className="w-5 h-5 text-zinc-300" />
+            <h3 className="font-mono text-xs uppercase font-bold tracking-wider">Vault Registry Link</h3>
+          </div>
+          <div className="space-y-4 font-mono text-xs">
+            <div className="flex justify-between border-b border-[#262624] pb-2 text-zinc-400">
+              <span>Subscription Run</span>
+              <span className="text-[#E53E3E] font-bold">14 Days Free Active</span>
+            </div>
+            <div className="flex justify-between border-b border-[#262624] pb-2 text-zinc-400">
+              <span>Automated Billing Execution</span>
+              <span className="text-white">Day 15 Trigger Mode</span>
+            </div>
+            <div className="flex justify-between border-b border-[#262624] pb-2 text-zinc-400">
+              <span>Licensing Value</span>
+              <span className="text-white">$35.00 USD / mo</span>
+            </div>
+            <button className="w-full text-center border border-zinc-800 bg-zinc-900 text-zinc-400 hover:bg-white hover:text-black transition-colors py-2 text-[10px] uppercase tracking-widest font-mono">
+              Revoke Authorization Agreement
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
