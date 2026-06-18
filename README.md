@@ -23,81 +23,9 @@ A modern, high-performance investment platform built with Next.js 15, React 19, 
 
 ## Project Structure
 
-```
-qupidapp/
-├── app/
-│   ├── layout.tsx          # Root layout
-│   ├── page.tsx            # Home page
-│   ├── pricing/
-│   │   └── page.tsx        # Pricing page
-│   ├── portal/
-│   │   └── page.tsx        # Dashboard/Portal
-│   └── api/                # API routes
-├── public/                 # Static assets
-├── globals.css             # Global styles
-├── tailwind.config.ts      # Tailwind configuration
-├── next.config.ts          # Next.js configuration
-├── tsconfig.json           # TypeScript configuration
-├── postcss.config.js       # PostCSS configuration
-└── netlify.toml            # Netlify deployment config
-```
-
-## Getting Started
-
 ### Prerequisites
 - Node.js 18+ or 20+
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/delijah5415/qupidapp.git
-cd qupidapp
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Run the development server:
-```bash
-npm run dev
-```
-
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run linting checks
-
-## Deployment on Netlify
-
-### Prerequisites
-- GitHub repository connected
-- Netlify account
-
-### Steps
-
-1. **Connect Repository**:
-   - Visit [netlify.com](https://netlify.com)
-   - Click "Add new site" → "Import an existing project"
-   - Authorize GitHub
-   - Select this repository
-
-2. **Configuration**:
-   - Build command: `npm run build`
-   - Publish directory: `.next`
-   - The `netlify.toml` handles the rest
-
-3. **Deploy**:
-   - Netlify auto-deploys on every push to main
-   - Preview URLs for pull requests
-
+- npm
 ## Pages
 
 ### Home (`/`)
